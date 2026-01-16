@@ -60,3 +60,4 @@ No se requiere instalación de dependencias de Node.js ni procesos de compilaci�
 **Carlos González**
 
 - Desarrollador Full Stack
+- Link del sitio: https://lorcas88.github.io/curriculum_vitae/
