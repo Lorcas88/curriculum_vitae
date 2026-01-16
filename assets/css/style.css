@@ -1,0 +1,98 @@
+:root {
+  --default-bg-dark: linear-gradient(135deg, #00082e 0%, #764ba2 100%);
+  --body-bg: var(--custom-bg-dark, var(--default-bg-dark));
+
+  --bs-primary: #3f3057;
+  --text-emphasis: #fff;
+  --text-body: rgba(255, 255, 255, 0.5);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="light"] {
+  --default-bg-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --body-bg: var(--custom-bg-light, var(--default-bg-light));
+
+  --bs-primary: #4c94ff;
+  --text-emphasis: #212529;
+  --text-body: #6c757d;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--body-bg);
+  background-attachment: fixed;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--text-emphasis);
+}
+
+#about img {
+  height: 200px;
+  width: auto;
+}
+
+/* Contact Section Enhancements */
+.hover-effect {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.hover-effect:hover {
+  transform: translateX(5px);
+  color: #fff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-control {
+  border: 1px solid var(--glass-border);
+  color: var(--text-emphasis);
+}
+
+.form-control:focus {
+  background-color: var(--glass-bg) !important;
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(76, 148, 255, 0.25);
+  color: var(--text-emphasis);
+}
+
+.form-control::placeholder {
+  color: var(--text-body);
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.big-icon {
+  font-size: 5rem;
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+.backdrop-filter {
+  backdrop-filter: blur(10px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
